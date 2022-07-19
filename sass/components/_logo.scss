@@ -1,0 +1,28 @@
+.logo {
+    color: $accent-color;
+    font-family: $heading-font-family;
+     
+    line-height: 1.19;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+
+    &__accent {
+        color: $titles-text-color;
+
+        &--inverse {
+            color: $white;
+        }
+    }
+
+     
+
+     
+
+        @media screen and (min-width:1200px) {
+             font-size: 26px;
+                line-height: 1.19;
+                letter-spacing: 0.03em;
+    
+        }
+}
