@@ -39,7 +39,8 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -177,7 +178,6 @@ header {
   background-color: #FFFFFF;
   padding: 48px 40px;
   overflow-y: scroll;
-  z-index: 3;
 }
 .menu-container.is-open {
   display: block;
