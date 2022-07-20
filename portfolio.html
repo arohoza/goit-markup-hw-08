@@ -81,14 +81,23 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                                <img class="project-card__image" 
-                                srcset="
-                                ./images/project1-mobile-1x.jpg 450w,
-                                ./images/project1-mobile-2x.jpg 450w,
-                                ./images/project1-tablet-1x.jpg 354w,
-                                ./images/project1-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project1-mobile-1x.jpg" alt="laptop display with employees'profiles "/>
+                                <picture class="project-card__image" >
+                                <source srcset="./images/project1-desktop-1x.jpg 1x,
+                                    ./images/project1-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)"/>
+
+                                <source
+                                    srcset="./images/project1-tablet-1x.jpg 1x,
+                                    ./images/project1-tablet-2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+
+                                <source
+                                srcset="./images/project1-mobile-1x.jpg 1x,
+                                ./images/project1-mobile-2x.jpg 2x"
+                                media="(max-width: 767px)"/>
+
+                                <img src="./images/project1-mobile-1x.jpg" alt="laptop display with employees'profiles" />
+                                </picture>
                                 <div class="project-card__overlay-container">
                                     <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                         platform for digital espionage
@@ -104,15 +113,19 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                                <img  class="project-card__image"
-                                srcset="
-                                ./images/project2-mobile-1x.jpg 450w,
-                                ./images/project2-mobile-2x.jpg 450w,
-                                ./images/project2-tablet-1x.jpg 354w,
-                                ./images/project2-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project1-mobile-1x.jpg" alt="laptop display with employees'profiles "
+                                <picture class="project-card__image">
+                                    <source srcset="./images/project2-desktop-1x.jpg 1x,
+                                            ./images/project2-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
+                                
+                                    <source srcset="./images/project2-tablet-1x.jpg 1x,
+                                                ./images/project2-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                                
+                                    <source srcset="./images/project2-mobile-1x.jpg 1x,
+                                                ./images/project2-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+                                
+                                    <img src="./images/project2-mobile-1x.jpg"
                                 alt="poster with two basketball players " />
+                                </picture>
                                 <div class="project-card__overlay-container">
                                     <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                         platform for digital espionage
@@ -128,15 +141,18 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                            <img class="project-card__image"
+                            <picture class="project-card__image">
+                                <source srcset="./images/project3-desktop-1x.jpg 1x,
+                                            ./images/project3-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
                             
-                            srcset="
-                                ./images/project3-mobile-1x.jpg 450w,
-                                ./images/project3-mobile-2x.jpg 450w,
-                                ./images/project3-tablet-1x.jpg 354w,
-                                ./images/project3-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project3-mobile-1x.jpg" alt="laptop display with employees'profiles "alt="Resturant logo "/>
+                                <source srcset="./images/project3-tablet-1x.jpg 1x,
+                                                ./images/project3-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/project3-mobile-1x.jpg 1x,
+                                                ./images/project3-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+                            
+                                <img src="./images/project3-mobile-1x.jpg" alt="Resturant logo "/>
+                            </picture>
                                 
                             <div class="project-card__overlay-container">
                                 <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
@@ -152,15 +168,20 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                            <img class="project-card__image"
-                            srcset="
-                                ./images/project4-mobile-1x.jpg 450w,
-                                ./images/project4-mobile-2x.jpg 450w,
-                                ./images/project4-tablet-1x.jpg 354w,
-                                ./images/project4-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project4-mobile-1x.jpg" alt="laptop display with employees'profiles "
+                            <picture class="project-card__image">
+                                <source srcset="./images/project4-desktop-1x.jpg 1x,
+                                                ./images/project4-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/project4-tablet-1x.jpg 1x,
+                                                 ./images/project4-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/project4-mobile-1x.jpg 1x,
+                                                 ./images/project4-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+                            
+                                <img src="./images/project4-mobile-1x.jpg" 
                             alt="Headphones set " />
+                            </picture>
+
                             <div class="project-card__overlay-container">
                                 <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                     platform for digital espionage
@@ -176,15 +197,19 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                                <img class="project-card__image"
-                                srcset="
-                                ./images/project5-mobile-1x.jpg 450w,
-                                ./images/project5-mobile-2x.jpg 450w,
-                                ./images/project5-tablet-1x.jpg 354w,
-                                ./images/project5-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project5-mobile-1x.jpg" alt="laptop display with employees'profiles "
+                                <picture class="project-card__image">
+                                    <source srcset="./images/project5-desktop-1x.jpg 1x,
+                                                     ./images/project5-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
+                                
+                                    <source srcset="./images/project5-tablet-1x.jpg 1x,
+                                                     ./images/project5-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                                
+                                    <source srcset="./images/project5-mobile-1x.jpg 1x,
+                                                     ./images/project5-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+                                
+                                    <img src="./images/project5-mobile-1x.jpg"
                                 alt="two cardboard packages " />
+                                </picture>
                                 <div class="project-card__overlay-container">
                                     <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                         platform for digital espionage
@@ -200,15 +225,19 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                                <img class="project-card__image"
-                                srcset="
-                                ./images/project6-mobile-1x.jpg 450w,
-                                ./images/project6-mobile-2x.jpg 450w,
-                                ./images/project6-tablet-1x.jpg 354w,
-                                ./images/project6-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project6-mobile-1x.jpg" alt="laptop display with employees'profiles "
+                                <picture class="project-card__image">
+                                    <source srcset="./images/project6-desktop-1x.jpg 1x,
+                                                    ./images/project6-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
+                                
+                                    <source srcset="./images/project6-tablet-1x.jpg 1x,
+                                                    ./images/project6-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                                
+                                    <source srcset="./images/project6-mobile-1x.jpg 1x,
+                                                    ./images/project6-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+                                
+                                    <img src="./images/project6-mobile-1x.jpg"
                                 alt="main page of the site shown on imac "  />
+                                </picture>
                                 <div class="project-card__overlay-container">
                                     <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                         platform for digital espionage
@@ -225,15 +254,19 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                            <img class="project-card__image"
-                            srcset="
-                                ./images/project7-mobile-1x.jpg 450w,
-                                ./images/project7-mobile-2x.jpg 450w,
-                                ./images/project7-tablet-1x.jpg 354w,
-                                ./images/project7-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project7-mobile-1x.jpg" alt="laptop display with employees'profiles "
+                            <picture class="project-card__image">
+                                <source srcset="./images/project7-desktop-1x.jpg 1x,
+                                                ./images/project7-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/project7-tablet-1x.jpg 1x,
+                                                ./images/project7-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/project7-mobile-1x.jpg 1x,
+                                                ./images/project7-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+                            
+                                <img src="./images/project7-mobile-1x.jpg"
                             alt="book spread "  />
+                            </picture>
                             <div class="project-card__overlay-container">
                                 <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                     platform for digital espionage
@@ -249,15 +282,19 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                                <img class="project-card__image"
-                                srcset="
-                                ./images/project8-mobile-1x.jpg 450w,
-                                ./images/project8-mobile-2x.jpg 450w,
-                                ./images/project8-tablet-1x.jpg 354w,
-                                ./images/project8-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project1-mobile-1x.jpg" alt="laptop display with employees'profiles "
-                                alt="tag for clothes"8/>
+                                <picture class="project-card__image">
+                                    <source srcset="./images/project8-desktop-1x.jpg 1x,
+                                                    ./images/project8-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
+                                
+                                    <source srcset="./images/project8-tablet-1x.jpg 1x,
+                                                    ./images/project8-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                                
+                                    <source srcset="./images/project8-mobile-1x.jpg 1x,
+                                                    ./images/project8-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+                                
+                                    <img src="./images/project8-mobile-1x.jpg"
+                                alt="tag for clothes"/>
+                                </picture>
                                 <div class="project-card__overlay-container">
                                     <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                         platform for digital espionage
@@ -273,15 +310,19 @@
                     <li class="project-card">
                         <a href="project-card__link">
                             <div class="project-card__thumb">
-                                <img  class="project-card__image"
-                                srcset="
-                                ./images/project9-mobile-1x.jpg 450w,
-                                ./images/project9-mobile-2x.jpg 450w,
-                                ./images/project9-tablet-1x.jpg 354w,
-                                ./images/project9-tablet-2x.jpg 354w"
-                                sizes="(min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                                src="./images/project9-mobile-1x.jpg" alt="laptop display with employees'profiles "
+                                <picture class="project-card__image">
+                                    <source srcset="./images/project9-desktop-1x.jpg 1x,
+                                                    ./images/project9-desktop-2x.jpg 2x" media="(min-width: 1200px)" />
+
+                                    <source srcset="./images/project9-tablet-1x.jpg 1x,
+                                                    ./images/project9-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+
+                                    <source srcset="./images/project9-mobile-1x.jpg 1x,
+                                                    ./images/project9-mobile-2x.jpg 2x" media="(max-width: 767px)" />
+
+                                    <img src="./images/project9-mobile-1x.jpg"
                                 alt="laptop mockup "/>
+                                </picture>
                                 <div class="project-card__overlay-container">
                                     <p class="project-card__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
                                         platform for digital espionage
