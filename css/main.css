@@ -216,7 +216,6 @@ header {
   .menu-container .is-open {
     padding-left: 40px;
     padding-bottom: 50px;
-    display: flex;
   }
   .page-nav__menu {
     display: flex;

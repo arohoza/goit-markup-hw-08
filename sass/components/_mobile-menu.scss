@@ -89,7 +89,7 @@ header {
     &.is-open {
         display: flex;
         flex-direction: column;
-            justify-content: space-between;
+        justify-content: space-between;
     }
 
 
@@ -104,8 +104,6 @@ header {
     .menu-container .is-open {
         padding-left: 40px;
         padding-bottom: 50px;
-        display:flex;
-        
     }
 
     .page-nav__menu {
@@ -115,7 +113,6 @@ header {
     }
 
     .page-nav {
-         
 
         &__item {
             font-weight: 500;
