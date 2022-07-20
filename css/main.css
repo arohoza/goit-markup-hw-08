@@ -202,7 +202,9 @@ header {
   }
 }
 .menu-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -214,14 +216,12 @@ header {
   .menu-container .is-open {
     padding-left: 40px;
     padding-bottom: 50px;
+    display: flex;
   }
   .page-nav__menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .page-nav__list {
-    margin-bottom: 302px;
   }
   .page-nav__item {
     font-weight: 500;
