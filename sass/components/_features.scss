@@ -5,10 +5,16 @@
     padding-right: 0;
     margin: 0 auto;
 
-    
+    &__item:not(:last-child){
+    @media screen and (max-width:767px) {
+           margin-bottom: 30px;;
+        }
+      
+    }
+ 
 
     &__image {
-        background-color: $button-secondary-color;
+        background-color: $darker-background-color;
         height: 120px;
         border-radius: 4px;
         margin-bottom: 30px;
@@ -19,6 +25,11 @@
     }
 
     &__title {
+        text-align: center;
+
+        @media screen  and (min-width:1200px){
+            text-align: left;
+        }
         color: $titles-text-color;
         font-weight: 700;
         line-height: 1.17;
@@ -59,6 +70,11 @@
             flex-basis: calc((100% - 4*30px)/4);
             margin: 15px;
         }
+
+    .features-list__title {
+        font-size:14px;
+        line-height:1.14;
+    }
 
 }
 

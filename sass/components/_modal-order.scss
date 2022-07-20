@@ -35,7 +35,7 @@
     padding: 40px;
     width:95vw;
     border-radius: 4px;
-    overflow-y: hidden;
+    overflow-y: scroll;
     z-index: 15;
 
 
@@ -101,6 +101,10 @@
 
     &__title {
         margin-bottom: 12px;
+        @media screen and (max-width:1199px) {
+            text-align:center;
+            
+        }
 
         color: $titles-text-color;
         font-size: 20px;

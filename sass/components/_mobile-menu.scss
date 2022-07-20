@@ -1,3 +1,7 @@
+body .is-open {
+    position: fixed;
+}
+
 header {
     position:relative;
     border-bottom: 1px solid $header-border-bottom;
@@ -61,7 +65,15 @@ header {
     }
 
 .menu-container {
-    position: relative;
+    position:relative;
+
+    @media screen and (max-width:767px) {
+            position: absolute;
+            z-index: 3;
+            overflow:hidden;
+            height: 100vh;
+    
+        }
     display: none;
     width: 100%;
     top: 0;
@@ -69,6 +81,7 @@ header {
     background-color: $white;
     padding: 48px 40px;
     overflow-y: scroll;
+    height:auto;
      
     
 
@@ -371,6 +384,7 @@ header {
             padding-right:0;
     
             &__item {
+                font-size: 14px;
                 
     
                 &:not(:last-child) {
