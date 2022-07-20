@@ -86,7 +86,9 @@ header {
     
 
     &.is-open {
-        display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     }
 
 
@@ -110,10 +112,7 @@ header {
     }
 
     .page-nav {
-        &__list {
-            margin-bottom: 302px;
-        }
-
+       
         &__item {
             font-weight: 500;
             font-size: 40px;
