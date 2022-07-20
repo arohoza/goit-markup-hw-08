@@ -59,7 +59,6 @@ img {
 
 .section {
   margin: 0 auto;
-  width: 100%;
 }
 @media screen and (max-width: 1199px) {
   .section {
@@ -274,6 +273,7 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
   .page-nav__list {
     display: flex;
@@ -741,7 +741,7 @@ header {
   padding: 40px;
   width: 95vw;
   border-radius: 4px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   z-index: 15;
   background-color: #FFFFFF;
   transform: translate(-50%, -50%) scale(1);
