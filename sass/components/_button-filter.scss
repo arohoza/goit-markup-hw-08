@@ -1,12 +1,15 @@
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    margin-top: -15px;
+    margin-bottom: 40px;
+     
 
     @media screen  and (min-width:768px){
         margin-bottom:30px;
     }
+        @media screen and (min-width:1200px) {
+            margin-bottom: 50px;
+        }
 
     &__item {
         border: none;
