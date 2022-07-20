@@ -1,57 +1,80 @@
 header {
     position:relative;
+    border-bottom: 1px solid $header-border-bottom;
 }
 
+@media screen and (max-width:767px){
+    .header{
+        padding-top: 16px;
+        padding-left: 15px;
+        padding-bottom: 16px;
+    }
 
+}
 
 .menu__button {
-    font-display: inline-flex;
-    margin: 0;
-    padding:0;
-    border:none;
-    background-color: transparent;
-    color: $accent-color;
-
-    &:hover .menu__button-icon
-    &:focus .menu__button-icon{
-        fill: currentColor;
-    }
-        
-    
-
-    @media screen and (min-width:768px) {
-        display:none;
-    }
-}
-
-.menu__button .icon-close-menu {
-    display: none;
-}
-
-.menu__button .icon-open-menu {
-    display:block;
-}
-
-.menu__button.is-open .icon-close-menu {
-    display: block;
-}
-
-.menu__button.is-open .icon-open-menu {
-    display: none;
-}
-
-
-.menu-container{
-     
-
-@media screen  and (max-width:767px){
-    display:none;
     position: absolute;
-    z-index:5;
-        top: 100%;
-        left: 0;
-        width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    fill: $titles-text-color;
+    transition: fill $transition-duration $transition-timing-function;
+    cursor: pointer;
+    overflow-y: scroll;
+
+
+    &-icon--close {
+        display: none;
+    }
+
+    &-icon--open {
+        display: block;
+    }
+
+    &.is-open &-icon--open {
+        display: none;
+    }
+
+    &.is-open &-icon--close {
+        display: block;
+    }
+
+    &:hover {
+        fill:$accent-color;
+        transition: $transition-duration $transition-timing-function;
+    }
 }
+        
+    @media screen and (min-width:768px) {
+    .menu__button{
+            display: none;
+        }
+    }
+
+.menu-container {
+    position: relative;
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    padding: 48px 40px;
+    overflow-y: scroll;
+     
+    z-index: 3;
+
+    &.is-open {
+        display: block;
+    }
+
 
 @media screen and (min-width:768px) {
     display: flex;
@@ -59,8 +82,9 @@ header {
 }
 
 
+
 @media screen and (max-width:767px) {
-    .menu-container {
+    .menu-container .is-open {
         padding-left: 40px;
         padding-bottom: 50px;
     }
@@ -182,10 +206,44 @@ header {
         margin-bottom: 0;
         margin-right:93px;
         padding-top: 32px;
-        padding-bottom: 32px;
-
-
     }
+
+    .page-nav__item {
+        position: relative;
+    }
+
+    .page-nav__link {
+            display: block;
+            color: $titles-text-color;
+            font-size: $base-font-size;
+            font-weight: 500;
+            line-height: 1.14;
+            text-decoration: none;
+            
+    
+            transition: color $transition-duration $transition-timing-function;
+    
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+    
+            &--current {
+                color: $accent-color;
+    
+                &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: '';
+                    width: 100%;
+                    height: 4px;
+                    background-color: $accent-color;
+                    border-radius: 2px;
+    
+                }
+            }
+        }
 
     
 
@@ -300,37 +358,7 @@ header {
             }
     
     
-            &__link {
-                display: block;
-                color: $titles-text-color;
-                font-size: $base-font-size;
-                font-weight: 500;
-                line-height: 1.14;
-                text-decoration: none;
-    
-                transition: color $transition-duration $transition-timing-function;
-    
-                &:hover,
-                &:focus {
-                    color: $accent-color;
-                }
-    
-                &--current {
-                    color: $accent-color;
-    
-                    &::after {
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        content: '';
-                        width: 100%;
-                        height: 4px;
-                        background-color: $accent-color;
-                        border-radius: 2px;
-    
-                    }
-                }
-            }
+             
         }
     
     
